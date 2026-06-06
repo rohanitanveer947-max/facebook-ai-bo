@@ -1,4 +1,8 @@
 import os
+# প্রক্সি সংক্রান্ত সমস্যা এড়াতে এটি যোগ করা হয়েছে
+os.environ.pop('http_proxy', None)
+os.environ.pop('https_proxy', None)
+
 import hmac
 import hashlib
 import logging
